@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    double a, b, h, x, y;
+    cout << "Enter start value: " << endl;
+    cin >> a;
+    cout << "Enter end value: " << endl;
+    cin >> b;
+    cout << "Enter encrement: " << endl;
+    cin >> h;
+    x = a;
+    while (x <= b)
+    {
+        y=2*exp(x)+x;
+        printf("\n Argument \n");
+        printf("\n x = %3.2f y=%11.10f \n", x, y);
+        x += h;
+    }
+    system("pause");
+    return 0;
+}
