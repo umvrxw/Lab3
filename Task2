@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main()
+{
+    long answer = 0;
+    int iter = 102;
+
+    for(int n = 1; n < iter - 3; n++)
+        answer += 10 * n - 3;
+
+    printf("Answer: %d", answer);
+    return 0;
+}
